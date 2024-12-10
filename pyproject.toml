@@ -5,7 +5,14 @@ description = "advent of code 2024 solutions"
 authors = ["Lawrence Borst"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
+packages = [
+    { include = "advent of code 2024" }
+]
+
+
+[tool.poetry.scripts]
+main = "advent of code 2024.main:main"
+
 
 [tool.poetry.dependencies]
 python = "^3.13"
