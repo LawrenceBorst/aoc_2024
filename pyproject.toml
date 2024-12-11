@@ -6,12 +6,12 @@ authors = ["Lawrence Borst"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "advent of code 2024" }
+    { include = "advent_of_code_2024" }
 ]
 
 
 [tool.poetry.scripts]
-main = "advent of code 2024.main:main"
+main = "main:main"
 
 
 [tool.poetry.dependencies]
