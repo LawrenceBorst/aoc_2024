@@ -22,6 +22,11 @@ python = "^3.13"
 pytest = "^8.3.4"
 
 
+
+[tool.poetry.group.dev.dependencies]
+mock = "^5.1.0"
+pytest-mock = "^3.14.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -6,7 +6,7 @@ U = TypeVar("U")
 
 
 class DataLoader(ABC, Generic[U]):
-    _data: str
+    _data: list[str]
 
     def __init__(self, path: str) -> None:
         self._data = self._read_data(path)

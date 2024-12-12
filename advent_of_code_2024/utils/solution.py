@@ -15,7 +15,7 @@ class Solution(ABC, Generic[T, U]):
     @abstractmethod
     def solution_1(self) -> T:
         return NotImplemented
-    
+
     @abstractmethod
     def solution_2(self) -> T:
         return NotImplemented
