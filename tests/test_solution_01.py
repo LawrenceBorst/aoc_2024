@@ -8,8 +8,12 @@ def test_load(data_loader: DataLoader01):
     assert data_loader.load() == ([3, 4, 2, 1, 3, 3], [4, 3, 5, 3, 9, 3])
 
 
-def test_solution(solution: Solution01):
+def test_solution_1(solution: Solution01):
     assert solution.solution_1() == 11
+
+
+def test_solution_2(solution: Solution01):
+    assert solution.solution_2() == 31
 
 
 @pytest.fixture

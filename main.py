@@ -11,6 +11,7 @@ def main():
     solution: Solution01 = Solution01(loader)
 
     print(solution.solution_1())
+    print(solution.solution_2())
 
 
 if __name__ == "__main__":

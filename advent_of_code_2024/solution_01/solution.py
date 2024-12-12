@@ -1,6 +1,7 @@
 from ..utils.solution import Solution
 from .data_loader import Data
 from typing import Annotated
+from collections import Counter
 
 
 class Solution01(Solution[int, Data]):
@@ -18,4 +19,8 @@ class Solution01(Solution[int, Data]):
         return sum([abs(x[0] - x[1]) for x in unzipped_sorted_data])
 
     def solution_2(self) -> int:
-        return NotImplemented
+        col_1, col_2 = self._data
+
+        counts: Counter = Counter(col_2)
+
+        return sum([x * counts[x] for x in col_1])
