@@ -11,7 +11,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if not validate_args(args):
-        raise Exception('Problem argument not in the range 1 to 25 inclusive')
+        raise Exception("Problem argument not in the range 1 to 25 inclusive")
 
     run(args.problem)
 
@@ -21,7 +21,7 @@ def validate_args(args) -> bool:
 
     if problem <= 0 or problem > 25:
         return False
-    
+
     return True
 
 
