@@ -36,4 +36,4 @@ class DataLoader04(DataLoader[Data]):
         elif char == "S":
             return Char.S
         else:
-            return ValueError('Char not in ["X", "M", "A", "S"]')
+            raise ValueError('Char not in ["X", "M", "A", "S"]')

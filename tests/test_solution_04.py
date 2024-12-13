@@ -140,7 +140,7 @@ def test_solution_1(solution: Solution04):
 
 
 def test_solution_2(solution: Solution04):
-    assert solution.solution_2() == 31
+    assert solution.solution_2() == 9
 
 
 @pytest.fixture
