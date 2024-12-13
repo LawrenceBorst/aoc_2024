@@ -16,6 +16,7 @@ main = "main:main"
 
 [tool.poetry.dependencies]
 python = "^3.13"
+numpy = "^2.2.0"
 
 
 [tool.poetry.group.test.dependencies]  
